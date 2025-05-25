@@ -32,7 +32,7 @@ class PlayerContext
         }
         else
         {
-            StopPlayback(); // если не пауза, нужно остановить предыдущее воспроизведение
+            StopPlayback();
             string track = Playlist[CurrentTrackIndex];
             audioFile = new AudioFileReader(track);
             waveOut = new WaveOutEvent();
